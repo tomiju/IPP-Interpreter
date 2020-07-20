@@ -1,0 +1,3 @@
+.IPPCODE20 # all instructions, only correct form (I hope)
+defvar GF@ahoj
+READ GF@ahoj string

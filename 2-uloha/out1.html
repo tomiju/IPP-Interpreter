@@ -1,0 +1,3594 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>IPP TEST SCRIPT</title><style>#Tabulka{border-collapse: collapse;}
+#Tabulka, #Tabulka2{border: 3px solid black;}</style>
+</head>
+<body>
+<h1><b><font size="10"><u>Výsledky automatických testů:</u></font></b></h1>
+<br>
+<ul><li><a href="#Prehled">Přehled</a></li>
+<li><a href="#Tabulka">Tabulka výsledků</a></li>
+<li><a href="#Shrnuti">Shrnutí výsledků</a></li>
+<br><br>
+<div>
+<table id="Prehled" cellpadding="3">
+<tr>
+<th align="left"><h2>Druh testování:</h2></th>
+<th align="left"><h2>parse & interpret</h2></th>
+</tr>
+<tr>
+<th align="left"><h2>Zdroj testů:</h2></th>
+<th align="left"><h2>Rekurzivní průchod ./tests/new/both/</h2></th>
+</tr>
+<tr>
+<th align="left"><h2>Použitý parser:</h2></th>
+<th align="left"><h2>./ondrej-parser/parse.php</h2></th>
+</tr>
+<tr>
+<th align="left"><h2>Použitý interpret:</h2></th>
+<th align="left"><h2>./interpret.py</h2></th>
+</tr>
+</table>
+<br><br>
+</div>
+<table id="Tabulka">
+<tr id="Tabulka">
+<th id="Tabulka" width="400px"><b><font size="10"><u>Název testu</u></font></b></th>
+<th id="Tabulka" width="400px"><b><font size="10"><u>Status</u></font></b></th>
+<th id="Tabulka" width="400px"><b><font size="10"><u>Návratový kód</u></font></b></th>
+<th id="Tabulka" width="400px"><b><font size="10"><u>Očekávaný kód</u></font></b></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/add/add.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/add/add_badtype1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/add/add_badtype2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/add/add_badtype3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/add/add_badtype4.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/add/add_badtype5.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/add/add_badtype6.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/add/add_negative.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/add/add_type.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/add/add_undef1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/add/add_undef1b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/add/add_undef1c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/add/add_undef1d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/add/add_undef1e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/add/add_undef2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/add/add_undef2b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/add/add_undef2c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/add/add_undef2d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/add/add_undef2e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/add/add_undef3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/add/add_undef3b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/add/add_undef3c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/add/add_undef3d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/add/add_undef3e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/add/add_unset1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/add/add_unset2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/and/and1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/and/and2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/and/and_badtype1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/and/and_badtype2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/and/and_badtype3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/and/and_badtype4.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/and/and_badtype5.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/and/and_badtype6.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/and/and_type.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/and/and_undef1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/and/and_undef1b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/and/and_undef1c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/and/and_undef1d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/and/and_undef1e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/and/and_undef2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/and/and_undef2b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/and/and_undef2c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/and/and_undef2d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/and/and_undef2e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/and/and_undef3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/and/and_undef3b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/and/and_undef3c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/and/and_undef3d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/and/and_undef3e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/and/and_unset1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/and/and_unset2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/concat/concat.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/concat/concat_badtype1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/concat/concat_badtype2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/concat/concat_badtype3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/concat/concat_badtype4.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/concat/concat_badtype5.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/concat/concat_badtype6.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/concat/concat_empty.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/concat/concat_type.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/concat/concat_undef1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/concat/concat_undef1b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/concat/concat_undef1c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/concat/concat_undef1d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/concat/concat_undef1e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/concat/concat_undef2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/concat/concat_undef2b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/concat/concat_undef2c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/concat/concat_undef2d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/concat/concat_undef2e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/concat/concat_undef3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/concat/concat_undef3b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/concat/concat_undef3c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/concat/concat_undef3d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/concat/concat_undef3e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/concat/concat_unset1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/concat/concat_unset2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/defvar/defvar_redef_gf.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">52</font></th>
+<th id="Tabulka"><font size="6">52</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/defvar/defvar_redef_lf1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">52</font></th>
+<th id="Tabulka"><font size="6">52</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/defvar/defvar_redef_lf2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">52</font></th>
+<th id="Tabulka"><font size="6">52</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/defvar/defvar_redef_lf3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">52</font></th>
+<th id="Tabulka"><font size="6">52</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/defvar/defvar_redef_tf.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">52</font></th>
+<th id="Tabulka"><font size="6">52</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/defvar/defvar_undef_frame1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/defvar/defvar_undef_frame2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/eq/eq.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/eq/eq2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/eq/eq_badtype1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/eq/eq_badtype2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/eq/eq_badtype3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/eq/eq_badtype4.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/eq/eq_badtype5.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/eq/eq_badtype6.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/eq/eq_type.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/eq/eq_undef1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/eq/eq_undef1b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/eq/eq_undef1c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/eq/eq_undef1d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/eq/eq_undef1e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/eq/eq_undef2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/eq/eq_undef2b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/eq/eq_undef2c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/eq/eq_undef2d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/eq/eq_undef2e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/eq/eq_undef3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/eq/eq_undef3b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/eq/eq_undef3c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/eq/eq_undef3d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/eq/eq_undef3e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/eq/eq_unset1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/eq/eq_unset2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/exit/exit1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">4</font></th>
+<th id="Tabulka"><font size="6">4</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/exit/exit2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">4</font></th>
+<th id="Tabulka"><font size="6">4</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/exit/exit_badtype1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/exit/exit_badtype2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/exit/exit_badtype3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/exit/exit_badtype4.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/exit/exit_badtype5.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/exit/exit_badtype6.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/exit/exit_badvalue1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">57</font></th>
+<th id="Tabulka"><font size="6">57</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/exit/exit_badvalue2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">57</font></th>
+<th id="Tabulka"><font size="6">57</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/exit/exit_undef_gf.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/exit/exit_undef_lf1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/exit/exit_undef_lf2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/exit/exit_undef_tf1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/exit/exit_undef_tf2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/exit/exit_unset.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/frame/popframe_empty_stack.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/frame/pushframe_undefined.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/func/call_undef.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">52</font></th>
+<th id="Tabulka"><font size="6">52</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/func/label_redef.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">52</font></th>
+<th id="Tabulka"><font size="6">52</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/func/return_empty_stack1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/func/return_empty_stack2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/functionCalls/functions.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/functionCalls/functions10.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/functionCalls/functions11.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/functionCalls/functions12.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/functionCalls/functions2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/functionCalls/functions3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/functionCalls/functions4.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/functionCalls/functions5.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/functionCalls/functions6.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/functionCalls/functions7.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/functionCalls/functions8.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/functionCalls/functions9.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/getchar/getchar.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/getchar/getchar_badtype1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/getchar/getchar_badtype2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/getchar/getchar_badtype3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/getchar/getchar_badtype4.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/getchar/getchar_badtype5.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/getchar/getchar_badtype6.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/getchar/getchar_outrange1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">58</font></th>
+<th id="Tabulka"><font size="6">58</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/getchar/getchar_outrange2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">58</font></th>
+<th id="Tabulka"><font size="6">58</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/getchar/getchar_type.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/getchar/getchar_undef1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/getchar/getchar_undef1b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/getchar/getchar_undef1c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/getchar/getchar_undef1d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/getchar/getchar_undef1e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/getchar/getchar_undef2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/getchar/getchar_undef2b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/getchar/getchar_undef2c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/getchar/getchar_undef2d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/getchar/getchar_undef2e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/getchar/getchar_undef3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/getchar/getchar_undef3b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/getchar/getchar_undef3c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/getchar/getchar_undef3d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/getchar/getchar_undef3e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/getchar/getchar_unset1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/getchar/getchar_unset2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_badtype1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_badtype2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_badtype3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_badtype4.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_badtype5.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_badtype6.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_badtype_nil1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_badtype_nil2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_badtype_nil3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_badtype_nil4.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_badtype_nil5.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_badtype_nil6.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_badtype_nil7.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_type.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_undef1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_undef1b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_undef1c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_undef1d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_undef1e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_undef2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_undef2b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_undef2c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_undef2d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_undef2e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_undef3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_undef3b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_undef3c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_undef3d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_undef3e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_unset1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/gt/gt_unset2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/idiv/idiv.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/idiv/idiv_badtype1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/idiv/idiv_badtype2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/idiv/idiv_badtype3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/idiv/idiv_badtype4.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/idiv/idiv_badtype5.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/idiv/idiv_badtype6.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/idiv/idiv_negative.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/idiv/idiv_type.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/idiv/idiv_undef1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/idiv/idiv_undef1b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/idiv/idiv_undef1c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/idiv/idiv_undef1d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/idiv/idiv_undef1e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/idiv/idiv_undef2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/idiv/idiv_undef2b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/idiv/idiv_undef2c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/idiv/idiv_undef2d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/idiv/idiv_undef2e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/idiv/idiv_undef3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/idiv/idiv_undef3b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/idiv/idiv_undef3c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/idiv/idiv_undef3d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/idiv/idiv_undef3e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/idiv/idiv_unset1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/idiv/idiv_unset2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/idiv/idiv_zero.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">57</font></th>
+<th id="Tabulka"><font size="6">57</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/int2char/int2char.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/int2char/int2char_badtype1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/int2char/int2char_badtype2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/int2char/int2char_badtype3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/int2char/int2char_badtype4.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/int2char/int2char_badtype5.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/int2char/int2char_badtype6.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/int2char/int2char_badvalue1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">58</font></th>
+<th id="Tabulka"><font size="6">58</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/int2char/int2char_badvalue2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">58</font></th>
+<th id="Tabulka"><font size="6">58</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/int2char/int2char_type.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/int2char/int2char_undef1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/int2char/int2char_undef2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/int2char/int2char_undef2b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/int2char/int2char_undef2c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/int2char/int2char_undef3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/int2char/int2char_undef3b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/int2char/int2char_undef4.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/int2char/int2char_undef5.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/int2char/int2char_undef5b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/int2char/int2char_undef5c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/int2char/int2char_undef6.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/int2char/int2char_undef6b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/int2char/int2char_unset1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/int2char/int2char_unset2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/int2char/int2char_unset3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifeq/jumpifeq.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifeq/jumpifeq_badtype1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifeq/jumpifeq_badtype2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifeq/jumpifeq_badtype3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifeq/jumpifeq_badtype4.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifeq/jumpifeq_badtype5.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifeq/jumpifeq_badtype6.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifeq/jumpifeq_undef2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifeq/jumpifeq_undef2b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifeq/jumpifeq_undef2c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifeq/jumpifeq_undef2d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifeq/jumpifeq_undef2e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifeq/jumpifeq_undef3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifeq/jumpifeq_undef3b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifeq/jumpifeq_undef3c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifeq/jumpifeq_undef3d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifeq/jumpifeq_undef3e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifeq/jumpifeq_undeflabel1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">52</font></th>
+<th id="Tabulka"><font size="6">52</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifeq/jumpifeq_undeflabel2.src</font></th>
+<th id="Tabulka" style="color:red;"><font size="6">NEÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">52</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifeq/jumpifeq_unset1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifeq/jumpifeq_unset2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifneq/jumpifneq.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifneq/jumpifneq_badtype1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifneq/jumpifneq_badtype2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifneq/jumpifneq_badtype3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifneq/jumpifneq_badtype4.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifneq/jumpifneq_badtype5.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifneq/jumpifneq_badtype6.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifneq/jumpifneq_undef2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifneq/jumpifneq_undef2b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifneq/jumpifneq_undef2c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifneq/jumpifneq_undef2d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifneq/jumpifneq_undef2e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifneq/jumpifneq_undef3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifneq/jumpifneq_undef3b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifneq/jumpifneq_undef3c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifneq/jumpifneq_undef3d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifneq/jumpifneq_undef3e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifneq/jumpifneq_undeflabel1.src</font></th>
+<th id="Tabulka" style="color:red;"><font size="6">NEÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">52</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifneq/jumpifneq_undeflabel2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">52</font></th>
+<th id="Tabulka"><font size="6">52</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifneq/jumpifneq_unset1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifneq/jumpifneq_unset2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_badtype1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_badtype2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_badtype3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_badtype4.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_badtype5.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_badtype6.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_badtype_nil1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_badtype_nil2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_badtype_nil3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_badtype_nil4.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_badtype_nil5.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_badtype_nil6.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_badtype_nil7.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_type.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_undef1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_undef1b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_undef1c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_undef1d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_undef1e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_undef2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_undef2b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_undef2c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_undef2d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_undef2e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_undef3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_undef3b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_undef3c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_undef3d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_undef3e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_unset1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/lt/lt_unset2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/move/move1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/move/move2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/move/move3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/move/move_type.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/move/move_undef1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/move/move_undef2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/move/move_undef2b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/move/move_undef2c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/move/move_undef3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/move/move_undef3b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/move/move_undef4.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/move/move_undef5.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/move/move_undef5b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/move/move_undef5c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/move/move_undef6.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/move/move_undef6b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/move/move_unset1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/move/move_unset2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/move/move_unset3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/mul/mul.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/mul/mul_badtype1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/mul/mul_badtype2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/mul/mul_badtype3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/mul/mul_badtype4.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/mul/mul_badtype5.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/mul/mul_badtype6.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/mul/mul_negative.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/mul/mul_type.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/mul/mul_undef1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/mul/mul_undef1b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/mul/mul_undef1c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/mul/mul_undef1d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/mul/mul_undef1e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/mul/mul_undef2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/mul/mul_undef2b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/mul/mul_undef2c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/mul/mul_undef2d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/mul/mul_undef2e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/mul/mul_undef3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/mul/mul_undef3b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/mul/mul_undef3c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/mul/mul_undef3d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/mul/mul_undef3e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/mul/mul_unset1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/mul/mul_unset2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/no-instructions.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/not/not.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/not/not_badtype1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/not/not_badtype2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/not/not_badtype3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/not/not_badtype4.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/not/not_badtype5.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/not/not_badtype6.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/not/not_type.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/not/not_undef1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/not/not_undef2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/not/not_undef2b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/not/not_undef2c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/not/not_undef3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/not/not_undef3b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/not/not_undef4.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/not/not_undef5.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/not/not_undef5b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/not/not_undef5c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/not/not_undef6.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/not/not_undef6b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/not/not_unset1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/not/not_unset2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/not/not_unset3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/or/or1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/or/or2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/or/or_badtype1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/or/or_badtype2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/or/or_badtype3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/or/or_badtype4.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/or/or_badtype5.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/or/or_badtype6.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/or/or_type.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/or/or_undef1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/or/or_undef1b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/or/or_undef1c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/or/or_undef1d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/or/or_undef1e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/or/or_undef2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/or/or_undef2b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/or/or_undef2c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/or/or_undef2d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/or/or_undef2e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/or/or_undef3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/or/or_undef3b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/or/or_undef3c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/or/or_undef3d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/or/or_undef3e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/or/or_unset1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/or/or_unset2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/read/read1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/read/read2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/read/read3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/read/read4.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/read/read_badval.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/read/read_undef1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/read/read_undef2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/read/read_undef2b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/read/read_undef2c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/read/read_undef3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/read/read_undef3b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_badtype1a.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_badtype1b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_badtype1c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_badtype2a.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_badtype2b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_badtype2c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_badtype3a.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_badtype3b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_badtype3c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_empty_char.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">58</font></th>
+<th id="Tabulka"><font size="6">58</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_outrange1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">58</font></th>
+<th id="Tabulka"><font size="6">58</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_outrange2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">58</font></th>
+<th id="Tabulka"><font size="6">58</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_type.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_undef1a.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_undef1b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_undef1c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_undef1d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_undef1e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_undef2a.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_undef2b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_undef2c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_undef2d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_undef2e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_undef3a.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_undef3b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_undef3c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_undef3d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_undef3e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_unset1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_unset2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/setchar/setchar_unset3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stack/pops_empty_stack1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stack/pops_empty_stack2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stack/pops_undef_gf.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stack/pops_undef_lf.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stack/pops_undef_tf.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stack/pops_undef_tf2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stack/pushs_pops.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stack/pushs_undef.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stack/pushs_unset.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stri2int/stri2int.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stri2int/stri2int_badtype1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stri2int/stri2int_badtype2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stri2int/stri2int_badtype3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stri2int/stri2int_badtype4.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stri2int/stri2int_badtype5.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stri2int/stri2int_badtype6.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stri2int/stri2int_outrange1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">58</font></th>
+<th id="Tabulka"><font size="6">58</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stri2int/stri2int_outrange2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">58</font></th>
+<th id="Tabulka"><font size="6">58</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stri2int/stri2int_type.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stri2int/stri2int_undef1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stri2int/stri2int_undef1b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stri2int/stri2int_undef1c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stri2int/stri2int_undef1d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stri2int/stri2int_undef1e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stri2int/stri2int_undef2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stri2int/stri2int_undef2b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stri2int/stri2int_undef2c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stri2int/stri2int_undef2d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stri2int/stri2int_undef2e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stri2int/stri2int_undef3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stri2int/stri2int_undef3b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stri2int/stri2int_undef3c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stri2int/stri2int_undef3d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stri2int/stri2int_undef3e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stri2int/stri2int_unset1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/stri2int/stri2int_unset2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/strlen/strlen.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/strlen/strlen_badtype1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/strlen/strlen_badtype2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/strlen/strlen_badtype3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/strlen/strlen_badtype4.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/strlen/strlen_badtype5.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/strlen/strlen_badtype6.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/strlen/strlen_empty.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/strlen/strlen_type.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/strlen/strlen_undef1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/strlen/strlen_undef2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/strlen/strlen_undef2b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/strlen/strlen_undef2c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/strlen/strlen_undef3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/strlen/strlen_undef3b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/strlen/strlen_undef4.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/strlen/strlen_undef5.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/strlen/strlen_undef5b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/strlen/strlen_undef5c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/strlen/strlen_undef6.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/strlen/strlen_undef6b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/strlen/strlen_unset1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/strlen/strlen_unset2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/strlen/strlen_unset3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/sub/sub.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/sub/sub_badtype1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/sub/sub_badtype2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/sub/sub_badtype3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/sub/sub_badtype4.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/sub/sub_badtype5.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/sub/sub_badtype6.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+<th id="Tabulka"><font size="6">53</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/sub/sub_negative.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/sub/sub_type.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/sub/sub_undef1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/sub/sub_undef1b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/sub/sub_undef1c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/sub/sub_undef1d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/sub/sub_undef1e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/sub/sub_undef2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/sub/sub_undef2b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/sub/sub_undef2c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/sub/sub_undef2d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/sub/sub_undef2e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/sub/sub_undef3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/sub/sub_undef3b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/sub/sub_undef3c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/sub/sub_undef3d.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/sub/sub_undef3e.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/sub/sub_unset1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/sub/sub_unset2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/type/type_bool1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/type/type_bool2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/type/type_int1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/type/type_int2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/type/type_nil1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/type/type_nil2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/type/type_string1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/type/type_string2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/type/type_type.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/type/type_undef1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/type/type_undef2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/type/type_undef2b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/type/type_undef2c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/type/type_undef3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/type/type_undef3b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/type/type_undef4.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/type/type_undef5.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/type/type_undef5b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/type/type_undef5c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/type/type_undef6.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/type/type_undef6b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/type/type_unset1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/type/type_unset2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/type/type_unset3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/write/write.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/write/write_undef1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/write/write_undef2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/write/write_undef2b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/write/write_undef2c.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/write/write_undef3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+<th id="Tabulka"><font size="6">55</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/write/write_undef3b.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+<th id="Tabulka"><font size="6">54</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/write/write_unset1.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/write/write_unset2.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/write/write_unset3.src</font></th>
+<th id="Tabulka" style="color:green;"><font size="6">ÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+<th id="Tabulka"><font size="6">56</font></th>
+</tr>
+</table>
+<div id="Shrnuti"><br><br><br><h2>Shrnutí: 586/588 testů bylo úspěšných.</h2><a href="#Prehled">(nahoru)</a><br><br><br>Autor: Tomáš Julina (xjulin08)<br></div>
+<table id="Tabulka2">
+<tr id="Tabulka2">
+<th id="Tabulka2" width="400px"><b><font size="10"><u>Název testu</u></font></b></th>
+<th id="Tabulka2" width="400px"><b><font size="10"><u>Status</u></font></b></th>
+<th id="Tabulka2" width="400px"><b><font size="10"><u>Návratový kód</u></font></b></th>
+<th id="Tabulka2" width="400px"><b><font size="10"><u>Očekávaný kód</u></font></b></th>
+</tr>
+<h2>Neúspěšné testy:</h2><tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifeq/jumpifeq_undeflabel2.src</font></th>
+<th id="Tabulka" style="color:red;"><font size="6">NEÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">52</font></th>
+</tr>
+<tr id="Tabulka">
+<th id="Tabulka" style="padding:10px" align="left"><font size="6">./tests/new/both/jumpifneq/jumpifneq_undeflabel1.src</font></th>
+<th id="Tabulka" style="color:red;"><font size="6">NEÚSPĚCH</font></th>
+<th id="Tabulka"><font size="6">0</font></th>
+<th id="Tabulka"><font size="6">52</font></th>
+</tr>
+</table>
+<a href="#Prehled">(nahoru)</a></body>
+</html>
